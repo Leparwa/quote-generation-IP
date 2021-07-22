@@ -1,0 +1,51 @@
+
+<div  style="background-color:#1d3b0b !important;">
+    <div class="row">
+        <div class="col-2">
+           <h1>
+
+           </h1>
+        </div>
+        <div class="col-10 d-flex justify-content-center">
+          <div class="col-sm-6">
+           <h4 >
+          
+           </h4>
+          </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div id="wrapper">
+            <div id="sidebar-wrapper">
+                <ul class="sidebar-nav" style="margin-left:0;">
+                 <li class="sidebar-brand"> 
+                    <a href=""> <i class="fa fa-bars " style="font-size:20px !Important;" aria-hidden="true" aria-hidden="true"></i> </a>
+                 </li>
+                 <li>
+                    <a [routerLink]="['/quotes']"><i class="fa fa-sort-alpha-asc " aria-hidden="true"> </i> <span style="margin-left:10px;">Created Quotes</span>  </a>
+                </li>
+                <li>
+                    <a [routerLink]="['/create-quote']"> <i class="fa fa-play-circle-o " aria-hidden="true"> </i> <span style="margin-left:10px;"> Create Quote</span> </a>
+                </li>
+                <li>
+                    <a [routerLink]="['/user/bob']"> <i class="fa fa-puzzle-piece" aria-hidden="true"> </i> <span style="margin-left:10px;"> Quotes Ranking</span> </a>
+                </li>
+                </ul>
+            </div>
+           
+                <div class="container-fluid">
+
+                    <div id="page-content-wrapper">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <router-outlet></router-outlet>
+                            </div>
+                     
+                    </div>
+                </div>
+                </div>
+        </div>
+    </div>
+</div>

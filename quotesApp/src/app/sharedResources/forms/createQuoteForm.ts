@@ -1,4 +1,4 @@
-import { Iform } from "../iquote";
+import { Iform } from "../models/iquote";
 
 export const createquoteFrom:Iform={
     fields: [

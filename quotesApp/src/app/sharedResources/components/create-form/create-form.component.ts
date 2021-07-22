@@ -8,13 +8,14 @@ import { createquoteFrom } from '../../forms/createQuoteForm';
 })
 export class CreateFormComponent implements OnInit {
 @Input() fields:any
-@Output() model = new EventEmitter()
+@Output() submitQuote = new EventEmitter();
+@Input() model: {}={};
 @Input() form:any
   constructor() { }
 
   ngOnInit(): void {
   }
-submit(){
-  
-}
+  onSubmit(model: {}) {
+    this.submitQuote.emit(model);
+  }
 }

@@ -5,6 +5,21 @@ export interface IQuote {
     quoteBy:string,
     createdBy:string,
     aboutQuoteCreator:string
+    isliked?:boolean,
+    quoteScore?:number,
+    likes?:[
+      {
+        likeId:string,
+        likedBy:string
+      }
+    ]
+    dislikes?:[
+        {
+        dislikeId:string,
+        dislikedBy:string
+        }
+    ]
+
 }
 export interface formFieldsConfig extends FormlyFieldConfig{
 }
