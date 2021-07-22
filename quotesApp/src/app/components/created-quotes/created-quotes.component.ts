@@ -14,6 +14,7 @@ quotes:IQuote[]=[]
   ngOnInit(): void {
     this.quotes=quotes
   }
+
 likeQuote(index:number){
   const like={
     likeId:Math.random().toLocaleString(),

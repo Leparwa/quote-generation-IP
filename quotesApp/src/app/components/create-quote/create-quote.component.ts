@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup } from '@angular/forms';
+import { Router } from '@angular/router';
 import { FormlyFieldConfig } from '@ngx-formly/core';
 import { quotes } from 'src/app/sharedResources/data/sampleData.data';
 import { IQuote } from 'src/app/sharedResources/models/iquote';
@@ -15,7 +16,9 @@ form = new FormGroup({});
 fields:FormlyFieldConfig[]=[]
 model:{}={}
 quotes:IQuote[]=[]
-  constructor() { }
+  constructor(
+    private router:Router
+  ) { }
 
   ngOnInit(): void {
 
@@ -25,5 +28,6 @@ quotes:IQuote[]=[]
   createQuote(model:any){
     console.log(model)
     this.quotes.push(model)
+    this.router.navigateByUrl('/')
   }
 }
