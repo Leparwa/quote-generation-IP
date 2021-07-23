@@ -11,6 +11,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { QuoteCardComponent } from './sharedResources/components/quote-card/quote-card.component';
 import { CreatedQuotesComponent } from './components/created-quotes/created-quotes.component';
 import { PortalLayoutComponent } from './components/portal-layout/portal-layout.component';
+import { QuotesRankingComponent } from './components/quotes-ranking/quotes-ranking.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { PortalLayoutComponent } from './components/portal-layout/portal-layout.
     CreateQuoteComponent,
     QuoteCardComponent,
     CreatedQuotesComponent,
-    PortalLayoutComponent
+    PortalLayoutComponent,
+    QuotesRankingComponent
   ],
   imports: [
     BrowserModule,

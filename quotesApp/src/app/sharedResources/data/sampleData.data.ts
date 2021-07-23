@@ -6,7 +6,7 @@ export const quotes:IQuote[]=[
     quoteBy:'kevin leresi',
     createdBy:'john ',
     aboutQuoteCreator:'philantropist',
-    isliked:false,
+  
     quoteScore:44,
     likes:[
         {

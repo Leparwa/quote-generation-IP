@@ -11,6 +11,7 @@ import { createquoteFrom } from '../../sharedResources/forms/createQuoteForm';
   templateUrl: './create-quote.component.html',
   styleUrls: ['./create-quote.component.css']
 })
+
 export class CreateQuoteComponent implements OnInit {
 form = new FormGroup({});
 fields:FormlyFieldConfig[]=[]
@@ -27,7 +28,22 @@ quotes:IQuote[]=[]
   }
   createQuote(model:any){
     console.log(model)
-    this.quotes.push(model)
+    const defaultValues={
+      ...model,
+      likes:[
+        {
+          likeId:Math.random().toLocaleString,
+          likedBy:'user'
+        }
+      ],
+      dislikes:[
+        {
+          dislikeId:Math.random().toLocaleString,
+          dislikedBy:'user'
+        }
+      ]
+    }
+    this.quotes.push(defaultValues)
     this.router.navigateByUrl('/')
   }
 }

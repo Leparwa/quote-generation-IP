@@ -1,6 +1,9 @@
 # QuotesApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.1.
+This app let users to create their quotes for the other users to vote 
+# Contributors
+
+these app  was fully done by: **Kevin Leresi Leparwa**
 
 ## Development server
 
@@ -22,6 +25,24 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
+ ## Known Bugs
+ There are no Bugs on this file but should you experience any difficulties in accessing or  getting the information you need, or come across anything kindly share with me via my email [email](kevinleparwa@gmail.com)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## TECHNOLOGIES USED
+
+|*NO*|Name| 
+|---------|------------|
+| #1 | HTML | 
+| #2 | CSS | 
+| #3 | Angular 11 |
+| #2 | Bootstrap |  
+
+##  gh-pages link
+[gh-page](https://leparwa.github.io/quote-generation-IP/)
+
+## My contact details
+you can find me on twitter @kevin_leresi
+## Licence
+Licensed under the *[MIT LICENSE](LICENSE.txt)*
+Copyright (c) 2021 *Leresi Kevin Leparwa*
+

@@ -1,0 +1,29 @@
+<div class="container-fluid">
+    <div class="card">
+        <div class="card-header">
+
+        </div>
+        <div class="card-body">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Quote Created By</th>
+                        <th>Total Likes</th>
+                        <th>Total Dislikes</th>
+                        <th>Score</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let quote of quotes; let i = index">
+                        <td>{{i+1}}</td>
+                        <td>{{quote?.createdBy}}</td>
+                        <td>{{(quote?.likes)?.length}}</td>
+                        <td>{{(quote?.dislikes)?.length}}</td>
+                        <td>{{quote?.quoteScore}} %</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

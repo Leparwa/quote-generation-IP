@@ -5,7 +5,6 @@ export interface IQuote {
     quoteBy:string,
     createdBy:string,
     aboutQuoteCreator:string
-    isliked?:boolean,
     quoteScore?:number,
     likes?:[
       {

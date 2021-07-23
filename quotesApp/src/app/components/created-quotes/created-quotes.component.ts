@@ -21,15 +21,26 @@ likeQuote(index:number){
     likedBy:'user'
   }
   this.quotes[index].likes?.push(like)
+  let likes=this.quotes[index].likes?.length
+  let dlikes=this.quotes[index].dislikes?.length
+
+  this.calculateScore(likes, dlikes, index)
 }
+
 dislikeQuote(index:number){
   const dislike={
     dislikeId:Math.random().toLocaleString(),
     dislikedBy:'user'
   }
   this.quotes[index].dislikes?.push(dislike)
-   
-  
-console.log(index)
+  let likes=this.quotes[index].likes?.length
+  let dlikes=this.quotes[index].dislikes?.length
+  this.calculateScore(likes, dlikes, index)
+}
+
+calculateScore(likes:any, dlikes:any, index:number){
+let total = ((likes - dlikes)/(likes+dlikes))*100
+console.log(total)
+this.quotes[index].quoteScore= Math.round(total)
 }
 }
